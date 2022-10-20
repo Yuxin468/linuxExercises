@@ -6,4 +6,4 @@ for i in {1000..2000}; do
         total=$(($total+$i))
     fi
 done
-echo $total
+echo "total: $total"
