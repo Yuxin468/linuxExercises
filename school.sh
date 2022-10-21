@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Property_Tax_Roll.csc > .gitignore
+echo Property_Tax_Roll.csv > .gitignore
 
 ##cat Property_Tax_Roll.csv
 
