@@ -24,4 +24,5 @@ cut -d, -f$column < $file | tail -n +2 |{
 	sum=$(echo "$sum + $n" | bc)
     done
     mean=$(echo "$sum / $count"| bc -l)
-    echo "$mean"}
+    echo "$mean"
+}
