@@ -6,8 +6,6 @@ then
     exit 0
 fi
 
-column=$1
-
 if [[ $# == 1 ]]
 then
     file=/dev/stdin
@@ -15,7 +13,7 @@ else
     file=$2
 fi
 
-cut -d, -f$column < $file | tail -n +2 |{
+cut -d, -f$1 < $2 | tail -n +2 |{
     count=0
     sum=0
     while read n
