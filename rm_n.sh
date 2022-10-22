@@ -6,7 +6,7 @@ if [ $# -ne 2]; then
 fi
 cd "$1"
 file=$(find . -type f -size +$2c)
-for i in $file; do
+for f in $file; do
     rm $f
 done
 
